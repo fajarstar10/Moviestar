@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="web.id.fajar.moviestar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="web.id.fajar.moviestar.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieQ.NoActionBar">
+        <activity android:name="web.id.fajar.moviestar.ui.favorite.FavoriteActivity"
+            android:theme="@style/Theme.MovieQ.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.tvshow.toprated.TopRatedTvShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.tvshow.popular.PopularTvShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.tvshow.airingtoday.AiringTodayTvShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.search.tvshow.SearchTvShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.search.movie.SearchMovieActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.movie.toprated.TopRatedMovieActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.movie.popular.PopularMovieActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.movie.upcoming.UpcomingMovieActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="web.id.fajar.moviestar.ui.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.tvshow.detail.DetailTvShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="web.id.fajar.moviestar.ui.movie.detail.DetailMovieActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="web.id.fajar.moviestar.ui.splash.SplashActivity"
+            android:theme="@style/Theme.MovieQ.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
